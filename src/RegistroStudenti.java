@@ -1,11 +1,26 @@
 
 public class RegistroStudenti {
     public static void main(String[] args) {
-       
+       Studente1 st1;
+       String nome1;
+       String cognome1;
        
  
        RegistroStudenti regSt = new RegistroStudenti();
-       
+       System.out.println(regSt);
+
+       //new student
+       st1=regSt.setNewStudent("ejonaTest", "xhekaTest");
+       System.out.println(regSt.setNewStudent("ejonaTest", "xhekaTest"));
+
+       // Studente1 method
+       nome1=st1.getNome();
+       System.out.println(nome1);
+       cognome1=st1.getCognome();
+       System.out.println(cognome1);
+
+       regSt[0]=st1; // devo assegnare il nuovo studente creato al RegistroStudenti ?????
+
         /*
             Studente1[] studens= new Studente1[5];
             studens[0]=new Studente1("ejona1","xheka1");
@@ -19,19 +34,21 @@ public class RegistroStudenti {
                 
             }
         */
-            System.out.println(regSt);
-
+           
+           
+            
         
     }
 
-   // costruttore per la classe RegistroStudenti
+
     public RegistroStudenti(){
           Studente1[] regStudenti= new Studente1[5];
 
     }
 
-    public void setNewStudent(String nome, String cognome){
-        Studente1  st=new Studente1(nome,cognome);
+    public Studente1 setNewStudent(String nome, String cognome){
+        Studente1 st;
+        return st=new Studente1(nome,cognome);
 
     }
    
