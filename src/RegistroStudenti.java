@@ -1,24 +1,41 @@
 
 public class RegistroStudenti {
     public static void main(String[] args) {
-       Studente1 st1;
-       String nome1;
-       String cognome1;
+       Studente1 st1,st2,st3,st4,st5;
+       String nome1,nome2,nome3,nome4,nome5;
+       String cognome1,cognome2,cognome3,cognome4,cognome5;;
        
  
        RegistroStudenti regSt = new RegistroStudenti();
        System.out.println(regSt);
 
        //new student
-       st1=regSt.setNewStudent("ejonaTest", "xhekaTest");
+       st1=regSt.setNewStudent("ejona1","xheka1");
+       st2=regSt.setNewStudent("ejona2","xheka2");
+       st3=regSt.setNewStudent("ejona3","xheka3");
+       st4=regSt.setNewStudent("ejona4","xheka4");
+       st5=regSt.setNewStudent("ejona5","xheka5");
        
        // Studente1 method
        nome1=st1.getNome();
+       nome2=st2.getNome();
+       nome3=st3.getNome();
+       nome4=st4.getNome();
+       nome5=st5.getNome();
        System.out.println(nome1);
+
        cognome1=st1.getCognome();
+       cognome2=st2.getCognome();
+       cognome3=st3.getCognome();
+       cognome4=st4.getCognome();
+       cognome5=st5.getCognome();
        System.out.println(cognome1);
 
-       regSt[0]=st1; // devo assegnare il nuovo studente creato al RegistroStudenti ?????
+       regSt[0]=st1; // devo assegnare il nuovo studente creato st1 al RegistroStudenti ?????
+       regSt[1]=st2;
+       regSt[2]=st3;
+       regSt[3]=st4;
+       regSt[4]=st5;
 
         /*
             Studente1[] studens= new Studente1[5];
