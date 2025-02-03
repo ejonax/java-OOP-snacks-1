@@ -11,8 +11,7 @@ public class RegistroStudenti {
 
        //new student
        st1=regSt.setNewStudent("ejonaTest", "xhekaTest");
-       System.out.println(regSt.setNewStudent("ejonaTest", "xhekaTest"));
-
+       
        // Studente1 method
        nome1=st1.getNome();
        System.out.println(nome1);
@@ -36,8 +35,6 @@ public class RegistroStudenti {
         */
            
            
-            
-        
     }
 
 
