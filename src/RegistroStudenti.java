@@ -2,23 +2,52 @@
 public class RegistroStudenti {
     public static void main(String[] args) {
        
-        Studente[] studens= new Studente[5];
+       
+ 
+       RegistroStudenti regSt = new RegistroStudenti();
+       
+        /*
+            Studente1[] studens= new Studente1[5];
+            studens[0]=new Studente1("ejona1","xheka1");
+            studens[1]=new Studente1("ejona2","xheka2");
+            studens[2]=new Studente1("ejona3","xheka3");
+            studens[3]=new Studente1("ejona4","xheka4");
+            studens[4]=new Studente1("ejona5","xheka5");
         
-        studens[0]=new Studente("ejona1","xheka1",41);
-        studens[1]=new Studente("ejona2","xheka2",42);
-        studens[2]=new Studente("ejona3","xheka3",43);
-        studens[3]=new Studente("ejona4","xheka4",44);
-        studens[4]=new Studente("ejona5","xheka5",45);
-        System.out.println(studens[0].getNome());
-    }
-} 
+            for (int i = 0; i < studens.length; i++) {
+                System.out.println(studens[i].getNome()+ " " + studens[i].getCognome());
+                
+            }
+        */
+            System.out.println(regSt);
 
-   /* 
-   class Studente {
+        
+    }
+
+   // costruttore per la classe RegistroStudenti
+    public RegistroStudenti(){
+          Studente1[] regStudenti= new Studente1[5];
+
+    }
+
+    public void setNewStudent(String nome, String cognome){
+        Studente1  st=new Studente1(nome,cognome);
+
+    }
+   
+    public void stampaRegStudenti(Studente1[] studens){
+        for (int i = 0; i < studens.length; i++) {
+            System.out.println(studens[i].getNome()+ " " + studens[i].getCognome());
+            
+    }
+}
+
+}
+   class Studente1 {
         String nome;
         String cognome;
     
-        public Studente(String nome, String cognome){
+        public Studente1(String nome, String cognome){
             this.nome=nome;
             this.cognome=cognome;
         }
@@ -39,5 +68,3 @@ public class RegistroStudenti {
             this.cognome = cognome;
         }
     }
-
-*/
