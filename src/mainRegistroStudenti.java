@@ -1,5 +1,5 @@
 
-public class RegistroStudenti {
+public class mainRegistroStudenti {
     public static void main(String[] args) {
        Studente1 st1,st2,st3,st4,st5;
        String nome1,nome2,nome3,nome4,nome5;
@@ -53,25 +53,29 @@ public class RegistroStudenti {
            
            
     }
-
-
-    public RegistroStudenti(){
-          Studente1[] regStudenti= new Studente1[5];
-
-    }
-
-    public Studente1 setNewStudent(String nome, String cognome){
-        Studente1 st;
-        return st=new Studente1(nome,cognome);
-
-    }
-   
-    public void stampaRegStudenti(Studente1[] studens){
-        for (int i = 0; i < studens.length; i++) {
-            System.out.println(studens[i].getNome()+ " " + studens[i].getCognome());
-            
-    }
 }
+
+    class RegistroStudenti{
+
+        private Studente1[] regStudenti;
+        Studente1 st;
+
+        public RegistroStudenti(){
+           regStudenti= new Studente1[5];
+        }
+    
+
+        public Studente1 setNewStudent(String nome, String cognome){
+            return st=new Studente1(nome,cognome);
+
+        }
+    
+        public void stampaRegStudenti(Studente1[] studens){
+            for (int i = 0; i < studens.length; i++) {
+                System.out.println(studens[i].getNome()+ " " + studens[i].getCognome());
+                
+        }
+    }
 
 }
    class Studente1 {
