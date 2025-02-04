@@ -10,7 +10,7 @@ public class mainStudente {
     }
 }
 
-    class Studente {
+class Studente {
         String nome;
         String cognome;
         int eta;
@@ -27,4 +27,4 @@ public class mainStudente {
                     
             return stringaLunga;
         }
-    }
+}
