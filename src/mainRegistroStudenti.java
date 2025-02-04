@@ -52,14 +52,19 @@ class RegistroStudenti {
     }
     
 
+    /**
+     * 
+     */
     public void  stampaListaStudenti(){
 
             String nomeCompleto;
 
             for (int i = 0; i < this.regStudenti.length; i++) {
-                //nomeCompleto= this.regStudenti[i].getNome()+ " " + this.regStudenti[i].getCognome();
-                nomeCompleto= this.regStudenti[i].getDescrizzione();
-                System.out.println(nomeCompleto);
+                if (this.regStudenti[i] != null){
+                    //nomeCompleto= this.regStudenti[i].getNome()+ " " + this.regStudenti[i].getCognome();
+                    nomeCompleto= this.regStudenti[i].getDescrizzione();
+                    System.out.println(nomeCompleto);
+                }
             }
     }
 
